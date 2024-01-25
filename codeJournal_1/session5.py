@@ -1,14 +1,12 @@
 """
 Session Prompt:
 Write a Python program that writes out a table of the function sin(x) vs. x, 
-where x is tabulated between 0 and 2 with a thousand entries. 
+where x is tabulated between 0 and 2pi with a thousand entries. 
 Follow the basic Python program structure, including a main program function.
 """
 import numpy as np
-import math as m
 from astropy.table import Table  #imports Table class
-from astropy.io import ascii #ascii plan text io (input/output)
-from astropy.io import fits #FITS format
+from astropy.io import ascii #ascii plain text io (input/output)
 
 def tableWriter(x, y, fname, xName='', yName=''):
     data = Table([x, y], names=[xName, yName])
@@ -17,7 +15,7 @@ def tableWriter(x, y, fname, xName='', yName=''):
     #Read the data in from the file
     
 def main():
-    x = np.linspace(0, 2*m.pi, 1000)
+    x = np.linspace(0, 2*np.pi, 1000)
     y = np.sin(x)
     fname = "codeJournal_1\\outputs\\session5Table.txt"
 

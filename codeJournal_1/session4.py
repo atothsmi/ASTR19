@@ -5,9 +5,11 @@ your favorite animal. Have the data members of the class
 represent the following physical parameters of the animal: 
 length of the arms (float), length of the legs (float), 
 number of eyes (int), does it have a tail? (bool), 
-is it furry? (bool). 
+is it furry? (bool).
+
 Write an initialization function that sets the values 
 of the data members when an instance of the class is created. 
+
 Write a member function of the class to print out and describe 
 the data members representing the physical characteristics of 
 the animal.
@@ -55,7 +57,6 @@ def main():
     #Below is a guessing game where the computer chooses an animal and describes it.
     #The player must enter the correct animal before the program ends.
     #It was created for the purpose of testing the class and class functions above.
-    """
     import random as r
 
     animals = {
@@ -74,6 +75,6 @@ def main():
         else:
             print("incorrect...")
     print('Correct!')
-    """
+
 if __name__=="__main__":
     main()
