@@ -1,0 +1,42 @@
+#########################################################################################################
+# Mass-radius curves for irradiated ocean planets (0.2 M_Earth to 20 M_Earth)
+# 
+# x_core' : core to core+mantle mass fraction in the planet, i.e. the core mass fraction without taking into account H2O in hydrosphere or atmosphere
+# x_H2O : total water mass fraction in the planet (taking into account the mass of H2O in the atmosphere)
+# T_irr : irradiation temperature (in K)
+# T_b : temperature at the boundary between the interior and the atmosphere model (in K)
+# M_b : mass of the interior part of the planet (in units of M_Earth), obtained by integrating the density profile
+# M_a : mass of the atmosphere of the planet (in units of M_Earth), obtained by integrating the density profile
+#       the mass of the planet is thus M_p = M_b + M_a
+# R_b : radius of the interior part of the planet (in units of R_Earth)
+# R_a : thickness of the atmosphere (in units of R_Earth)
+#       the radius of the planet is thus R_p = R_b + R_a
+# errcode : integer indicating if the run succeeded or failed, based on the success or fail to interpolate the atmosphere properties in the final iteration of the interior model
+#           value 0 : the interpolation succeeded
+#           value 1 : atmosphere properties are extrapolated beyond the range of parameters
+#           value 2 : extrapolation yields to unphysical results
+#########################################################################################################
+
+
+
+#  x_core'     x_H2O     T_irr       T_b              M_b              M_a              R_b              R_a   errcode
+   0.30000   0.50000   500.000  3102.639  2.093010336E-01  3.326688975E-28  1.244301933E+00  1.194820815E+00         2
+   0.30000   0.50000   500.000  4257.679  2.539655583E-01  4.274863149E-28  1.264588388E+00  2.657285631E+00         2
+   0.30000   0.50000   500.000  3580.199  3.230901177E-01  2.168087149E-03  1.596962074E+00  1.285126873E+00         2
+   0.30000   0.50000   500.000  4043.970  4.122148819E-01  6.861780186E-28  1.755764428E+00  2.134568211E+00         2
+   0.30000   0.50000   500.000  3248.462  5.274819491E-01  3.211940510E-03  1.607300538E+00  9.898844303E-01         1
+   0.30000   0.50000   500.000  3090.983  6.724028581E-01  2.939695633E-03  1.610574049E+00  6.989557915E-01         1
+   0.30000   0.50000   500.000  2997.076  8.566914684E-01  2.604362772E-03  1.640112557E+00  5.187707708E-01         0
+   0.30000   0.50000   500.000  2937.945  1.091851869E+00  2.205425346E-03  1.685720241E+00  3.945807859E-01         0
+   0.30000   0.50000   500.000  2879.331  1.390972314E+00  1.922957033E-03  1.742078773E+00  3.087469054E-01         0
+   0.30000   0.50000   500.000  2834.445  1.772481970E+00  1.717605832E-03  1.808484255E+00  2.478943423E-01         0
+   0.30000   0.50000   500.000  2791.726  2.258063630E+00  1.556588942E-03  1.882055884E+00  2.018399827E-01         0
+   0.30000   0.50000   500.000  2744.777  2.878341306E+00  1.429241598E-03  1.963796554E+00  1.657789564E-01         0
+   0.30000   0.50000   500.000  2706.537  3.667017767E+00  1.330790219E-03  2.054982900E+00  1.380803578E-01         0
+   0.30000   0.50000   500.000  2673.720  4.674409241E+00  1.244500133E-03  2.152369643E+00  1.157437958E-01         0
+   0.30000   0.50000   500.000  2635.183  5.954864419E+00  1.168152072E-03  2.255985927E+00  9.720709795E-02         0
+   0.30000   0.50000   500.000  2596.338  7.589282041E+00  1.103662397E-03  2.368978870E+00  8.201328929E-02         0
+   0.30000   0.50000   500.000  2561.732  9.666011469E+00  1.047897760E-03  2.485653061E+00  6.946053334E-02         0
+   0.30000   0.50000   500.000  2531.374  1.232295626E+01  1.005487289E-03  2.612598839E+00  5.920390061E-02         0
+   0.30000   0.50000   500.000  2496.863  1.569628113E+01  9.597062363E-04  2.743089221E+00  5.032892800E-02         0
+   0.30000   0.50000   500.000  2456.354  1.999616745E+01  9.120838748E-04  2.878058769E+00  4.261882625E-02         0
