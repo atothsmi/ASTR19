@@ -1,0 +1,30 @@
+figure.figsize: 10, 5
+figure.edgecolor: green
+figure.facecolor: white
+
+axes.linewidth: 2
+axes.facecolor: white
+axes.ymargin: 0.1
+
+axes.spines.bottom: True
+axes.spines.left: True
+axes.spines.top: False
+axes.spines.right: False
+
+font.sans-serif: Arial
+
+axes.grid: True
+grid.color: gray
+grid.linewidth: 0.1
+
+xtick.bottom: True
+xtick.top: False
+xtick.direction: in 
+xtick.major.size: 5
+xtick.major.width: 1
+xtick.minor.visible: True
+xtick.minor.size: 3
+xtick.minor.width: .5
+
+lines.linewidth: 2
+lines.markersize: 5
